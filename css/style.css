@@ -1,0 +1,1298 @@
+/* ========================
+   Theme Name: Cruise 
+   ======================== */
+
+/** Table of Contents:
+
+* 1.0 - Fonts
+* 2.0 - Useful classes
+* 3.0 - General
+    * 3.1 - Forms
+    * 3.2 - Buttons
+* 4.0 - Mobile menu
+* 5.0 - Header
+* 6.0 - Footer
+* 7.0 - Home
+ 
+
+/* 1.0 - Fonts
+=============================== */
+
+@font-face {
+    font-family: 'FrutigerLight';
+    src: url('../fonts/FrutigerLight.eot');
+    src: url('../fonts/FrutigerLight.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerLight.woff2') format('woff2'),
+    url('../fonts/FrutigerLight.woff') format('woff'),
+    url('../fonts/FrutigerLight.ttf') format('truetype'),
+    url('../fonts/FrutigerLight.svg#FrutigerLight') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerItalic';
+    src: url('../fonts/FrutigerItalic.eot');
+    src: url('../fonts/FrutigerItalic.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerItalic.woff2') format('woff2'),
+    url('../fonts/FrutigerItalic.woff') format('woff'),
+    url('../fonts/FrutigerItalic.ttf') format('truetype'),
+    url('../fonts/FrutigerItalic.svg#FrutigerItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerBold';
+    src: url('../fonts/FrutigerBold.eot');
+    src: url('../fonts/FrutigerBold.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerBold.woff2') format('woff2'),
+    url('../fonts/FrutigerBold.woff') format('woff'),
+    url('../fonts/FrutigerBold.ttf') format('truetype'),
+    url('../fonts/FrutigerBold.svg#FrutigerBold') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerBlack';
+    src: url('../fonts/FrutigerBlack.eot');
+    src: url('../fonts/FrutigerBlack.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerBlack.woff2') format('woff2'),
+    url('../fonts/FrutigerBlack.woff') format('woff'),
+    url('../fonts/FrutigerBlack.ttf') format('truetype'),
+    url('../fonts/FrutigerBlack.svg#FrutigerBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerLTStdBold';
+    src: url('../fonts/FrutigerLTStdBold.eot');
+    src: url('../fonts/FrutigerLTStdBold.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerLTStdBold.woff2') format('woff2'),
+    url('../fonts/FrutigerLTStdBold.woff') format('woff'),
+    url('../fonts/FrutigerLTStdBold.ttf') format('truetype'),
+    url('../fonts/FrutigerLTStdBold.svg#FrutigerLTStdBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GarageGothicBold';
+    src: url('../fonts/GarageGothicBold.eot');
+    src: url('../fonts/GarageGothicBold.eot') format('embedded-opentype'),
+    url('../fonts/GarageGothicBold.woff2') format('woff2'),
+    url('../fonts/GarageGothicBold.woff') format('woff'),
+    url('../fonts/GarageGothicBold.ttf') format('truetype'),
+    url('../fonts/GarageGothicBold.svg#GarageGothicBold') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerRoman';
+    src: url('../fonts/FrutigerRoman.eot');
+    src: url('../fonts/FrutigerRoman.eot') format('embedded-opentype'),
+    url('../fonts/FrutigerRoman.woff2') format('woff2'),
+    url('../fonts/FrutigerRoman.woff') format('woff'),
+    url('../fonts/FrutigerRoman.ttf') format('truetype'),
+    url('../fonts/FrutigerRoman.svg#FrutigerRoman') format('svg');
+}
+
+
+/*icomoon fonts*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icomoon/icomoon.eot?w352td');
+    src: url('../icomoon/icomoon.eot?w352td#iefix') format('embedded-opentype'),
+    url('../icomoon/icomoon.ttf?w352td') format('truetype'),
+    url('../icomoon/icomoon.woff?w352td') format('woff'),
+    url('../icomoon/icomoon.svg?w352td#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+    content: "\e90a";
+}
+
+.icon-facebook1:before {
+    content: "\e908";
+}
+
+.icon-brand:before {
+    content: "\e908";
+}
+
+.icon-social:before {
+    content: "\e908";
+}
+
+.icon-phone:before {
+    content: "\e909";
+}
+
+.icon-telephone:before {
+    content: "\e909";
+}
+
+.icon-contact:before {
+    content: "\e909";
+}
+
+.icon-support:before {
+    content: "\e909";
+}
+
+.icon-call:before {
+    content: "\e909";
+}
+
+.icon-mail-envelope-closed:before {
+    content: "\e900";
+}
+
+.icon-facebook-square:before {
+    content: "\e901";
+}
+
+.icon-facebook:before {
+    content: "\e902";
+    color: #3b5998;
+}
+
+.icon-instagram:before {
+    content: "\e903";
+}
+
+.icon-search:before {
+    content: "\e904";
+}
+
+.icon-keyboard_arrow_right:before {
+    content: "\e905";
+}
+
+.icon-keyboard_arrow_left:before {
+    content: "\e906";
+}
+
+.icon-keyboard_arrow_down:before {
+    content: "\e907";
+}
+
+.icon-calendar:before {
+    content: "\e90b";
+}
+.icon-menu:before {
+  content: "\e90c";
+}
+.icon-cross:before {
+  content: "\e90d";
+}
+/*2.0 Useful Classes*/
+
+body {
+    background: #fafafa;
+    color: #0f3960;
+    font-size: 18px;
+    font-family: 'FrutigerLight';
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.relative-block {
+    position: relative;
+}
+
+.clear-list {
+    margin-bottom: 0;
+}
+
+a {
+    color: #fff;
+}
+
+.row {
+    max-width: 87rem;
+}
+
+.col {
+    max-width: 90.625rem;
+    margin: 0 auto;
+}
+
+.header .row {
+    max-width: 90.625rem;
+}
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.section-small {
+    padding: 3rem 0;
+}
+
+.v-line {
+    border-left: 1px solid #ebebeb;
+}
+
+.dark-section {
+    background: #fafafa;
+}
+
+.white-section {
+    background: #fff;
+}
+
+.blue-section {
+    background: #0e2235;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ebebeb;
+}
+
+blockquote {
+    border: none;
+    position: relative;
+}
+
+blockquote:before {
+    position: absolute;
+    content: "“";
+    top: -30px;
+    left: 10px;
+    font-size: 4em;
+    font-family: 'GarageGothicBold';
+    color: #0db7bb;
+
+}
+
+blockquote:after {
+    position: absolute;
+    content: "”";
+    top: 50px;
+    right: 0;
+    font-size: 4em;
+    font-family: 'GarageGothicBold';
+    color: #0db7bb;
+
+}
+.icons{
+    font-size: 2em;
+}
+/*3.0 General*/
+
+h1,
+h2 {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'FrutigerLTStdBold';
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'FrutigerLTStdBold';
+    margin-bottom: 1rem;
+}
+
+.h2 {
+    font-size: 2em;
+    font-family: 'FrutigerLTStdBold';
+    margin-bottom: 1rem;
+}
+
+h3 {}
+
+h4 {
+    font-size: 1.3em;
+    font-family: 'FrutigerLTStdBold';
+    color: #303030;
+
+}
+
+h5 {
+    font-size: 1em;
+    color: #0db7bb;
+    font-family: 'FrutigerBlack';
+    margin-bottom: 1rem;
+}
+
+.h5 {
+    font-size: 1.1em;
+    color: #0db7bb;
+    font-family: 'FrutigerBlack';
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 0.8em;
+    font-family: 'FrutigerLTStdBold';
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1em;
+}
+
+small {
+    font-size: 0.8em;
+    font-family: 'FrutigerLight';
+}
+
+.hvr-underline-from-center {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -10px;
+    background: #0db7bb;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/* buttons*/
+.search-block{
+   position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    width: 300px;
+    display: none;
+ 
+}
+.show-block{
+    display: block;  
+}
+.button {
+    font-size: 1.1em;
+    color: #fff;
+    background: #0db7bb;
+    padding: 1rem 1.5rem;
+    font-family: 'FrutigerLTStdBold';
+    margin-bottom: 0;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+}
+.btn2 {
+    font-size: 1.1em;
+    color: #fff;
+    background: #0db7bb;
+    padding: 1rem 1.5rem;
+    font-family: 'FrutigerLTStdBold';
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 3px;
+
+}
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: white;
+}
+
+.button:hover:before,
+.button:focus:before,
+.button:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.btn {
+    border: 1px solid #dadada;
+    color: #919294; 
+    font-family: 'FrutigerBold';
+    padding: 0.1rem;
+    width: 11rem;
+    height: 3.3rem;
+}
+input[type=text],
+input[type=email],
+input[type=search] {
+    height: 3.3rem;
+    border: 1px solid #dadada;
+    color: #919294;
+    font-size: 1em;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    font-family: 'FrutigerBold';
+    border-radius: 0;
+
+}
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #919294;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #919294;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #919294;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #919294;
+}
+select {
+    background-image: url(../images/arrow-down.png);
+    font-family: 'FrutigerBold';
+    height: 3.3rem;
+    border: 1px solid #dadada;
+    color: #919294;
+    font-size: 1em;
+    padding-left: 1rem;
+}
+/*  Mobile sidebar
+=========================================== */
+
+.mobile-sidebar {
+    display: none;
+}
+.icon-menu,.icon-cross{
+    cursor: pointer;
+}
+@media screen and (max-width: 63.9375em) {
+    .mobile-sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 260px;
+        left: -260px;
+        background-color: #2e2e2e;
+        color: #fff;
+        min-height: 100%;
+        height: 100%;
+        overflow-y: auto;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        z-index: 999;
+        padding-top: 18px;
+        padding-bottom: 20px;
+    }
+    .mobile-sidebar nav li {
+        margin-bottom: 15px;
+    }
+    .mobile-sidebar nav li a {
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .mobile-sidebar nav li:last-child {
+        margin-top: 40px;
+    }
+
+    .open .mobile-sidebar {
+        left: 0;
+    }
+    .menu-close,
+    .menu-open {
+        color: #fff!important;
+        font-size: 2em;
+        line-height: 0.5em;
+        margin-top: 8px;
+        display: inline-block;
+        transition: all .3s ease;
+    }
+    .menu-close {
+        opacity: 0;
+    }
+    .open .menu-close {
+        opacity: 1;
+        transition-delay: 0.6s;
+    }
+    .open .wrapper-inner {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+/*5.0 Header*/
+
+.header {
+    background: #0e2235;
+
+}
+
+.cruise-text,
+.call {
+    padding: 0.7rem 2rem;
+}
+
+.logo {
+    padding: 0.7rem 0;
+}
+
+.cruise-text p {
+    font-size: 0.9em;
+    font-family: 'FrutigerItalic';
+    font-weight: 700;
+    color: #fff;
+}
+
+.call p,
+.call a {
+    font-size: 1.2em;
+    font-family: 'FrutigerLTStdBold';
+    color: #fff;
+    z-index: 2;
+}
+
+.v-left-call {
+    border-left: 3px solid #324353;
+    padding-left: 4rem;
+}
+
+.call:before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\e909";
+    z-index: 1;
+    font-size: 50px;
+    border: 5px solid #324353;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    color: #324353;
+    top: 0;
+    left: 10px;
+
+}
+
+.search {
+    font-size: 1.3em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.make {
+    background: #0db7bb;
+    color: #fff;
+    font-family: 'FrutigerLTStdBold';
+    font-size: 1.2em;
+    padding: 0 2.2rem;
+}
+
+.header-menu {
+    background-size: 100% 100%;
+}
+
+.menu {
+    padding: 1.2rem 0;
+    font-size: 1em;
+}
+
+.menu-bg {
+    background: rgba(240, 240, 241, 0.3);
+}
+
+.menu li a {
+    font-size: inherit;
+    text-transform: capitalize;
+    color: #0f3960;
+    font-family: 'FrutigerLTStdBold';
+    letter-spacing: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.vineyard-voyage {
+    padding: 5rem 0 10rem 0;
+}
+
+.package-box {
+    background: #fff;
+    margin-top: -50px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 2rem;
+}
+
+.package-box .tabs,
+.package-box .tabs-content {
+    border: none;
+}
+
+.package-box .tabs-title:first-child a {
+    background: #0e2235;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'FrutigerBold';
+    transform: translateY(-50%);
+    margin-left: 0.8rem;
+}
+
+.package-box .tabs-title:last-child a {
+    background: #ededed;
+    color: #0f3960;
+    font-size: 1em;
+    font-family: 'FrutigerBold';
+    transform: translateY(-50%);
+    margin-left: 0.8rem;
+}
+
+.package-box .tabs-title > a:focus,
+.package-box .tabs-title > a[aria-selected='true'] {
+    background: #0db7bb;
+    color: #0f3960;
+
+}
+
+.cal {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.search-now input[type=text] {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.search-now span {
+    color: #919294;
+}
+
+.search-call span,
+.search-call a {
+    font-size: 1em;
+    color: #919294;
+    font-family: 'FrutigerBold';
+    margin-right: 1rem;
+    z-index: 2;
+
+}
+
+.search-call a:last-child,
+.search-call span {
+    margin-bottom: 0.8rem;
+}
+
+.search-call:before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\e909";
+    z-index: 1;
+    font-size: 50px;
+    border: 5px solid #f9f9fa;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color: #f9f9fa;
+    top: -13px;
+    left: 0;
+}
+
+.line-or {
+    color: #acacac;
+    font-family: 'FrutigerBold';
+    font-size: 1.1em;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0.4rem 0;
+    position: relative;
+
+}
+
+.line-or:before {
+    position: absolute;
+    top: -40px;
+    left: 23px;
+    content: "";
+    height: 40px;
+    border: 1px solid #ebebeb;
+
+}
+
+.line-or:after {
+    position: absolute;
+    top: 50px;
+    left: 23px;
+    content: "";
+    height: 40px;
+    border: 1px solid #ebebeb;
+
+}
+
+/*cruise box*/
+
+.card {
+    height: 100%;
+    margin-top: 2rem;
+
+}
+
+.card a,
+.info-box a {
+    font-size: 0.8em;
+    color: #0db7bb;
+    font-family: 'FrutigerLTStdBold';
+}
+
+.card-section {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.card-section span {
+    background: #0e2235;
+    font-family: 'FrutigerLTStdBold';
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*bucket section*/
+
+.bucket-section {
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 3.5rem;
+}
+
+.bucket-section h2,
+.slider-content h5 {
+    margin-bottom: 0;
+}
+
+.bucket-section .tabs li a {
+    height: 6rem;
+    /*    width: 10rem;*/
+    font-size: 1.33em;
+    border: 1px solid #ebebeb;
+    background: #fafafa;
+    padding: 2rem 1rem;
+    font-family: 'FrutigerLight';
+    color: #0f3960;
+    width: 100%;
+}
+
+.bucket-section .tabs {
+    border: none;
+    width: 100%;
+    display: flex;
+}
+
+.bucket-section .tabs li {
+    flex-grow: 1;
+}
+
+.bucket-section .tabs .tabs-title > a:hover, .bucket-section .tabs .tabs-title > a:focus, .bucket-section .tabs .tabs-title > a[aria-selected='true'] {
+    background: #0db7bb;
+    color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: none;
+
+}
+
+.bucket-section .tabs:last-child .tabs-title a {
+    border-top-right-radius: 6px;
+}
+
+/*slider section*/
+
+.slider-section {
+    padding: 4rem 0 0 0;
+}
+.slider-section:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url(../images/prev-bg.png);
+    width: 138px;
+    height: 546px;
+    z-index: 5;
+}
+.slider-section:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right:0;
+    background-image: url(../images/next-bg.png);
+    width: 138px;
+    height: 546px;
+    z-index: 5;
+}
+.slider-content {
+    background: #fff;
+    padding: 2.4rem 1rem;
+    border: 1px solid #ebebeb;
+
+}
+
+.slider-content h2 {
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+
+}
+
+.slider-content:first-child p {
+    margin-top: 2rem;
+}
+
+.slider-content h6 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.slider-footer {
+    margin-top: 1.8rem;
+}
+
+.sl-call,
+.sl-call a {
+    font-size: 0.8em;
+    font-family: 'FrutigerLTStdBold';
+    color: #0f3960;
+}
+
+.sl-call span {
+    margin-right: 0.5rem;
+}
+/*listing slider*/
+.listing-slider img {
+    height: 100%;
+}
+
+.listing-slider .sl {
+    padding: 0 10px;
+}
+
+.listing-slider .button {
+    font-size: 0.7em;
+}
+.listing-slider .icon-keyboard_arrow_left,.listing-slider .icon-keyboard_arrow_next{
+    color: #fff;
+    font-size: 5em;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.09);
+}
+.listing-slider .slick-arrow.slick-prev {
+    left: 10%;
+}
+
+.listing-slider .slick-arrow.slick-next {
+    right: 10%;
+}
+.listing-slider .slick-dots > li > button {
+    background: #cbcfd3;
+}
+.listing-slider .slick-dots > li.slick-active > button {
+    background: #546270;
+}
+.slider-section .tabs-content {
+    background: #fafafa;
+}
+.listing-slider .slick-dots{
+    margin: 1rem 0;
+}
+.slider-section .tabs-panel {
+    padding: 0
+}
+
+/*customer slider*/
+
+.customer-slider {
+    margin-top: 2rem;
+}
+
+.avatar-info {
+    margin-left: 1rem;
+}
+
+.avatar-info h5 {
+    margin-bottom: 0;
+    color: #0f3960;
+    margin-top: 0.5rem
+}
+
+.avatar-info p {
+    font-family: 'FrutigerBold';
+}
+
+.customer-slider .slick-prev,
+.customer-slider .slick-next {
+    color: #0f3960;
+    font-size: 2em;
+}
+
+.customer-slider .slick-arrow.slick-prev {
+    left: 30%;
+    top: 183px;
+}
+
+.customer-slider .slick-arrow.slick-next {
+    right: 30%;
+    top: 183px;
+}
+
+.partners {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 8%;
+}
+
+.partners .btn2 {
+    background: #0e2235;
+}
+
+/*newsletter section*/
+
+.newsletter-section {
+    background: #00afb9;
+}
+
+.newsletter-section * {
+    color: #fff;
+}
+
+.newsletter-section .button {
+    background: #0f3960;
+    margin-bottom: 1rem;
+
+}
+
+.newsletter-section:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 6%;
+    background-image: url(../images/newsletter.png);
+    width: 364px;
+    height: 261px;
+
+}
+
+/*social section*/
+
+.social {
+    font-size: 1.7em;
+}
+
+.social span {
+    margin-right: 0.3em;
+}
+
+.instagram {
+    font-family: 'FrutigerLTStdBold';
+}
+
+/*cruise section*/
+
+.cruise-book-section{
+    background-image: url(../images/cruise-bg.png);
+    background-repeat: no-repeat;
+/*    background-size: cover;*/
+/*    width: 100%;*/
+    background-size: 100% 100%;
+    height: 37rem;
+    background-attachment: fixed;
+    
+}
+
+.cruise-book-section img {
+ 
+}
+
+.criuse-book {
+    max-width: 30rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+}
+
+.criuse-book h6 {
+    color: #0db7bb;
+    text-transform: none;
+    font-family: 'FrutigerBlack';
+}
+
+.criuse-book h2 {
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.criuse-book {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.find-cruise,
+.express-section span {
+    transform: translateY(-50%);
+}
+
+.book {
+    margin-top: 2rem;
+}
+
+/*info section*/
+
+.info-box {
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 2.2rem 2.5rem;
+    flex-grow: 1;
+}
+
+.info-section h4 {
+    color: #0f3960;
+    margin-bottom: 1rem;
+}
+
+/*express-section */
+
+.express-section {
+    padding-bottom: 3rem;
+}
+
+.contact-box {
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 2.2rem 2rem;
+    min-width: 17rem;
+     margin-top: 2.7rem;
+}
+.cont-icon{
+    font-size: 28px;
+    margin-right: 10px;
+
+}
+.contact-box h5 {
+    color: #0f3960;
+    font-family: 'FrutigerLTStdBold';
+
+}
+.contact-box ul li{
+        display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.contact-box ul li span:first-child {
+    color: #0db7bb;
+    font-size: 28px;
+}
+
+/*footer*/
+
+.footer-top {
+    padding: 1rem 0;
+    border-bottom: 1px solid #213345;
+}
+
+.footer-top ul li a,
+.rights,
+.footer h6 {
+    color: #fff;
+    font-family: 'FrutigerLTStdBold';
+}
+
+.footer small {
+    color: #fff;
+    font-family: 'FrutigerBold';
+}
+
+.footer .socials li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.footer .socials a {
+    font-size: 1.4em;
+}
+
+.footer h6 {
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 1em;
+}
+
+.deposit small {
+    color: #7b8188;
+    font-family: 'FrutigerRoman';
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+}
+
+.footer-bottom ul li a {
+    font-size: 0.7em;
+    color: #474747;
+    margin-right: 1rem;
+    font-family: 'FrutigerRoman';
+    text-decoration: underline;
+}
+
+.footer-bottom ul li a:hover {
+    text-decoration: none;
+}
+.footer-bottom p {
+    font-size: 0.7em;
+    color: #474747;
+    font-family: 'FrutigerRoman';
+}
+
+@media screen and (max-width: 1365px) {
+    .col {
+        max-width: 83.625rem;
+
+    }
+    .row {
+        max-width: 83rem;
+
+    }
+    .newsletter-section:before {
+        right: 3%;
+
+    }
+    .contact-box{
+      min-width: 16px; 
+    margin-bottom: 10px;
+    }
+    .info-box{
+      flex-grow: 1; 
+        min-width: 14rem;
+    }
+  
+}
+
+@media screen and (max-width: 63.9375em) {
+    html{
+        font-size: 14px;
+    }
+    body{
+        font-size: 14px;
+    }
+    .book-flex{
+    flex-direction: column;
+    }  
+    .book-flex input[type=text]{
+        width: 100%;
+        margin-bottom:18px;
+    }
+    .newsletter-section:before{
+        display: none;
+       
+    }
+    .info-box{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+  .footer-top .columns,.footer .columns,.footer-bottom .columns,.footer-bottom .columns ul{
+     justify-content: center;
+      text-align: center;
+    }
+    .footer-top ul   {
+       flex-direction: column; 
+    }  
+      .footer-top ul li  {
+     margin-top: 10px; 
+    }
+    .rights{
+        margin-top: 20px;
+    }
+    .deposit p {
+        font-size: 10px;
+        line-height: 0.9;
+    }
+    .slider-footer .columns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    .listing-slider .v-line{
+        border: none;
+    }
+    .customer-slider .slick-arrow.slick-prev{
+        top:150px;
+    } .customer-slider .slick-arrow.slick-next{
+        top:150px;
+    }
+   
+ 
+}
+@media screen and (max-width: 33.3em) {
+      .socials{
+        margin-top: 18px;
+    }
+  
+}
